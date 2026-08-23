@@ -2,7 +2,7 @@ export const content = {
   hero: {
     name: "Josef Schejbal",
     titles: ["Video Editor", "Cameraman", "Director"],
-    description: "29-year-old video editor and cameraman with over 10 years in video production. I specialize in editing, cinematography, and creating visually impactful content for brands, influencers, and international projects.",
+    description: "Video editor and cameraman with over 10 years in video production. I specialize in editing, cinematography, and creating visually impactful content for brands, influencers, and international projects.",
     personalNote: "I see inspiration and confidence as the foundation of success. Systematic, with my heart in the right place."
   },
   contact: {
@@ -34,19 +34,22 @@ export const content = {
       title: "Cesta na OKTAGON",
       role: "Editor & Director",
       description: "Award-winning documentary series covering Vémola vs. Attila. Awarded Video of the Year.",
-      tags: ["Documentary", "Sports", "Directing"]
+      tags: ["Documentary", "Sports", "Directing"],
+      youtubeId: "7AJEWOuc8mA"
     },
     {
-      title: "FattyPillow & Influencers",
+      title: "Influencers",
       role: "Manager & Filmmaker",
       description: "Built channels gaining 500k+ subs in a year. Generated 1B+ views worldwide across major gaming and lifestyle influencers.",
-      tags: ["YouTube", "Content Strategy", "Filmmaking"]
+      tags: ["YouTube", "Content Strategy", "Filmmaking"],
+      youtubeId: "rK3p63XoF3U"
     },
     {
-      title: "High-Volume Promo Content",
+      title: "Hopi cup 2024 JS video 4K",
       role: "Video Creator",
       description: "Produced 60-90 branded videos, vlogs, and documentary-style pieces monthly for multiple clients simultaneously.",
-      tags: ["REELS", "Commercial", "Social Media"]
+      tags: ["REELS", "Commercial", "Social Media"],
+      youtubeId: "rftPJ3-nlmU"
     }
   ],
   experience: [

@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Stack } from "./components/Stack";
@@ -13,7 +8,7 @@ import { Footer } from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-50 selection:bg-blue-500/30 selection:text-white font-sans overflow-x-hidden">
+    <div className="min-h-screen bg-black text-neutral-50 selection:bg-white/30 selection:text-white font-sans overflow-x-hidden">
       <Header />
       <main>
         <Hero />

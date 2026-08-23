@@ -10,16 +10,29 @@ const icons: Record<string, React.ReactNode> = {
 
 export function Stack() {
   return (
-    <section id="stack" className="py-24 relative">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="stack" className="py-24 relative overflow-hidden bg-black">
+      {/* Background Video */}
+      <div className="absolute inset-0 z-0">
+        <video 
+          src="/b596e442-db69-46d8-80bb-20424c031fac.MP4" 
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-30 grayscale"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           className="mb-16 md:text-center"
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">The Stack</h2>
-          <p className="text-slate-400 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">The Gear</h2>
+          <p className="text-neutral-400 max-w-2xl mx-auto">
             My toolkit for bringing ideas to life through precision, speed, and vision.
           </p>
         </motion.div>
@@ -32,16 +45,16 @@ export function Stack() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
-              className="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors"
+              className="p-8 rounded-3xl bg-neutral-900/50 border border-white/10 hover:bg-neutral-900 transition-colors"
             >
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center text-blue-400 mb-6 border border-white/10">
+              <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center text-white mb-6 border border-white/10">
                 {icons[skill.icon]}
               </div>
               <h3 className="text-xl font-bold text-white mb-4">{skill.category}</h3>
               <ul className="space-y-3">
                 {skill.items.map((item) => (
-                  <li key={item} className="flex items-center text-slate-300">
-                    <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-3" />
+                  <li key={item} className="flex items-center text-neutral-300">
+                    <span className="w-1.5 h-1.5 rounded-full bg-white mr-3" />
                     {item}
                   </li>
                 ))}

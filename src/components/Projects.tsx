@@ -4,9 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export function Projects() {
   return (
-    <section id="projects" className="py-24 relative bg-slate-950">
-      <div className="absolute left-0 top-1/2 w-64 h-64 bg-blue-500/10 rounded-full blur-[100px]" />
-      
+    <section id="projects" className="py-24 relative bg-black">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -15,7 +13,7 @@ export function Projects() {
           className="mb-16 md:text-center"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Selected Works</h2>
-          <p className="text-slate-400 max-w-2xl mx-auto">
+          <p className="text-neutral-400 max-w-2xl mx-auto">
             A showcase of high-impact visual storytelling across sports, gaming, and commercial industries.
           </p>
         </motion.div>
@@ -28,22 +26,34 @@ export function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
-              className="group relative flex flex-col justify-between p-8 rounded-3xl bg-slate-900 border border-white/5 hover:border-blue-500/30 transition-all duration-300 overflow-hidden"
+              className="group relative flex flex-col justify-between p-8 rounded-3xl bg-neutral-950 border border-white/5 hover:border-white/30 transition-all duration-300 overflow-hidden"
             >
-              {/* Hover gradient glow */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 via-transparent to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 transition-all duration-500" />
+              <div className="absolute inset-0 bg-neutral-900/0 group-hover:bg-neutral-900/50 transition-all duration-500" />
               
-              <div className="relative z-10">
+              <div className="relative z-10 flex-grow flex flex-col">
                 <div className="flex justify-between items-start mb-6">
-                  <span className="text-sm font-medium text-blue-400 bg-blue-400/10 px-3 py-1 rounded-full">
+                  <span className="text-sm font-medium text-black bg-white px-3 py-1 rounded-full">
                     {project.role}
                   </span>
-                  <ArrowUpRight className="w-5 h-5 text-slate-500 group-hover:text-white transition-colors" />
+                  <ArrowUpRight className="w-5 h-5 text-neutral-500 group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-slate-300 transition-all">
+                
+                {project.youtubeId && (
+                  <div className="mb-6 relative w-full pt-[56.25%] rounded-xl overflow-hidden bg-neutral-900 border border-white/10">
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full"
+                      src={`https://www.youtube.com/embed/${project.youtubeId}`}
+                      title={project.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                )}
+
+                <h3 className="text-2xl font-bold text-neutral-300 mb-4 group-hover:text-white transition-all">
                   {project.title}
                 </h3>
-                <p className="text-slate-400 leading-relaxed mb-8">
+                <p className="text-neutral-400 leading-relaxed mb-8 flex-grow">
                   {project.description}
                 </p>
               </div>
@@ -52,7 +62,7 @@ export function Projects() {
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs font-medium text-slate-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-md"
+                    className="text-xs font-medium text-neutral-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-md"
                   >
                     {tag}
                   </span>
