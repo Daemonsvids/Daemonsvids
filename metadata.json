@@ -1,0 +1,6 @@
+{
+  "name": "Josef Schejbal Portfolio",
+  "description": "Modern portfolio for Josef Schejbal, a Video Editor, Cameraman, and Director.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

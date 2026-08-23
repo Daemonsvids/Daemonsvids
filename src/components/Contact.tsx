@@ -1,0 +1,151 @@
+import { motion } from "motion/react";
+import { content } from "../content";
+import { Mail, Phone, MapPin, Globe } from "lucide-react";
+import { useState } from "react";
+
+export function Contact() {
+  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus("submitting");
+    
+    const formData = new FormData(e.currentTarget);
+    formData.append("access_key", content.contact.web3formsToken);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      
+      if (res.ok) {
+        setStatus("success");
+        (e.target as HTMLFormElement).reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  };
+
+  return (
+    <section id="contact" className="py-24 relative overflow-hidden bg-slate-950">
+      <div className="absolute right-0 bottom-0 w-96 h-96 bg-purple-500/10 rounded-full blur-[128px]" />
+      
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          
+          {/* Info */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="flex flex-col justify-center"
+          >
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Let's create something extraordinary.</h2>
+            <p className="text-slate-400 mb-12 text-lg">
+              {content.hero.personalNote}
+            </p>
+
+            <div className="space-y-6">
+              <a href={`mailto:${content.contact.email}`} className="flex items-center text-slate-300 hover:text-white transition-colors group">
+                <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mr-4 group-hover:bg-blue-500/20 group-hover:text-blue-400 transition-colors">
+                  <Mail className="w-5 h-5" />
+                </div>
+                {content.contact.email}
+              </a>
+              <a href={`tel:${content.contact.phone.replace(/\s+/g, '')}`} className="flex items-center text-slate-300 hover:text-white transition-colors group">
+                <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mr-4 group-hover:bg-blue-500/20 group-hover:text-blue-400 transition-colors">
+                  <Phone className="w-5 h-5" />
+                </div>
+                {content.contact.phone}
+              </a>
+              <a href={`https://${content.contact.website}`} target="_blank" rel="noopener noreferrer" className="flex items-center text-slate-300 hover:text-white transition-colors group">
+                <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mr-4 group-hover:bg-blue-500/20 group-hover:text-blue-400 transition-colors">
+                  <Globe className="w-5 h-5" />
+                </div>
+                {content.contact.website}
+              </a>
+              <div className="flex items-center text-slate-300 group">
+                <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mr-4">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                {content.contact.address}
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Form */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bg-white/5 border border-white/10 p-8 md:p-10 rounded-3xl backdrop-blur-md"
+          >
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <input type="hidden" name="subject" value="New Submission from Portfolio" />
+              
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  className="w-full bg-slate-900/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all"
+                  placeholder="John Doe"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-2">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  className="w-full bg-slate-900/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all"
+                  placeholder="john@example.com"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-2">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  required
+                  rows={4}
+                  className="w-full bg-slate-900/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all resize-none"
+                  placeholder="How can we work together?"
+                />
+              </div>
+
+              <button
+                type="submit"
+                disabled={status === "submitting"}
+                className="w-full bg-white text-slate-950 font-bold py-4 rounded-xl hover:bg-slate-200 transition-colors disabled:opacity-70 flex justify-center items-center"
+              >
+                {status === "submitting" ? "Sending..." : "Send Message"}
+              </button>
+
+              {status === "success" && (
+                <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-green-400 text-sm text-center">
+                  Message sent successfully!
+                </motion.p>
+              )}
+              {status === "error" && (
+                <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-red-400 text-sm text-center">
+                  Something went wrong. Please try again.
+                </motion.p>
+              )}
+            </form>
+          </motion.div>
+
+        </div>
+      </div>
+    </section>
+  );
+}
