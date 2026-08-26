@@ -7,8 +7,8 @@ export function Header() {
 
   const links = [
     { name: "Home", href: "#home" },
-    { name: "Gear", href: "#stack" },
     { name: "Projects", href: "#projects" },
+    { name: "Gear", href: "#stack" },
     { name: "Experience", href: "#experience" },
     { name: "Contact", href: "#contact" },
   ];

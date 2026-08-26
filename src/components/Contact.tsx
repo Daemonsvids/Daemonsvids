@@ -1,12 +1,12 @@
 import { motion } from "motion/react";
 import { content } from "../content";
 import { Mail, Phone, MapPin, Globe } from "lucide-react";
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 
 export function Contact() {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("submitting");
     

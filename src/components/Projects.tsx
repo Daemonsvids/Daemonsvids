@@ -35,7 +35,19 @@ export function Projects() {
                   <span className="text-sm font-medium text-black bg-white px-3 py-1 rounded-full">
                     {project.role}
                   </span>
-                  <ArrowUpRight className="w-5 h-5 text-neutral-500 group-hover:text-white transition-colors" />
+                  {project.link ? (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-1 rounded-full text-neutral-500 hover:text-white transition-colors"
+                      title="Open project"
+                    >
+                      <ArrowUpRight className="w-5 h-5" />
+                    </a>
+                  ) : (
+                    <ArrowUpRight className="w-5 h-5 text-neutral-500 group-hover:text-white transition-colors" />
+                  )}
                 </div>
                 
                 {project.youtubeId && (
@@ -46,6 +58,19 @@ export function Projects() {
                       title={project.title}
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
+                    ></iframe>
+                  </div>
+                )}
+
+                {project.instagramUrl && (
+                  <div className="mb-6 relative w-full h-[400px] rounded-xl overflow-hidden bg-neutral-900 border border-white/10">
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full border-0"
+                      src={project.instagramUrl}
+                      title={project.title}
+                      allow="autoplay; encrypted-media; fullscreen"
+                      allowFullScreen
+                      scrolling="no"
                     ></iframe>
                   </div>
                 )}
