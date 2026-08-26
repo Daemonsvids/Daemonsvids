@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { content } from "../content";
-import { Mail, Phone, MapPin, Globe } from "lucide-react";
+import { Mail, Phone, MapPin, Globe, Instagram } from "lucide-react";
 import { useState, type FormEvent } from "react";
 
 export function Contact() {
@@ -78,6 +78,15 @@ export function Contact() {
                   <Globe className="w-5 h-5 text-neutral-400 group-hover:text-white" />
                 </div>
                 {content.contact.website}
+              </a>
+              <a href={content.contact.instagram} target="_blank" rel="noopener noreferrer" className="flex items-center text-neutral-300 hover:text-white transition-colors group">
+                <div className="w-12 h-12 rounded-full bg-neutral-900 border border-white/10 flex items-center justify-center mr-4 group-hover:bg-pink-500/20 group-hover:border-pink-500/40 transition-colors">
+                  <Instagram className="w-5 h-5 text-neutral-400 group-hover:text-pink-400 transition-colors" />
+                </div>
+                <div className="flex flex-col">
+                  <span>Instagram</span>
+                  <span className="text-xs text-neutral-500 font-mono group-hover:text-neutral-300">{content.contact.instagramHandle}</span>
+                </div>
               </a>
               <div className="flex items-center text-neutral-300 group">
                 <div className="w-12 h-12 rounded-full bg-neutral-900 border border-white/10 flex items-center justify-center mr-4">

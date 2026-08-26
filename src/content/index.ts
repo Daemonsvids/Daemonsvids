@@ -9,6 +9,8 @@ export const content = {
     email: "josefschejbal@daemonsvids.com",
     phone: "+420 607 670 320",
     website: "www.daemonsvids.com",
+    instagram: "https://www.instagram.com/daemonlive",
+    instagramHandle: "@daemonlive",
     address: "Novákových 33, Praha 8, 180 00",
     web3formsToken: "189d0a49-58a9-4c7b-a528-00dec75ff808"
   },

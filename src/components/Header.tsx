@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram } from "lucide-react";
 import { useState } from "react";
+import { content } from "../content";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,25 +22,50 @@ export function Header() {
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
-          {links.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-sm font-medium text-neutral-400 hover:text-white transition-colors"
-            >
-              {link.name}
-            </a>
-          ))}
-        </nav>
+        <div className="hidden md:flex items-center gap-8">
+          <nav className="flex items-center gap-8">
+            {links.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-sm font-medium text-neutral-400 hover:text-white transition-colors"
+              >
+                {link.name}
+              </a>
+            ))}
+          </nav>
+
+          <a
+            href={content.contact.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-neutral-300 hover:text-white hover:border-pink-500/40 hover:bg-pink-500/10 transition-all"
+            aria-label="Instagram Profile"
+          >
+            <Instagram className="w-3.5 h-3.5 text-pink-400" />
+            <span>@daemonlive</span>
+          </a>
+        </div>
 
         {/* Mobile Toggle */}
-        <button
-          className="md:hidden text-neutral-400 hover:text-white"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X /> : <Menu />}
-        </button>
+        <div className="flex items-center gap-3 md:hidden">
+          <a
+            href={content.contact.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full bg-white/5 border border-white/10 text-neutral-300 hover:text-white"
+            aria-label="Instagram Profile"
+          >
+            <Instagram className="w-4 h-4 text-pink-400" />
+          </a>
+          <button
+            className="text-neutral-400 hover:text-white"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle navigation menu"
+          >
+            {isOpen ? <X /> : <Menu />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Nav */}
@@ -59,6 +85,16 @@ export function Header() {
               {link.name}
             </a>
           ))}
+          <a
+            href={content.contact.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
+            className="flex items-center gap-2 px-4 py-2.5 mt-2 rounded-xl bg-white/5 border border-white/10 text-sm font-mono text-neutral-200"
+          >
+            <Instagram className="w-4 h-4 text-pink-400" />
+            <span>Follow on Instagram (@daemonlive)</span>
+          </a>
         </motion.nav>
       )}
     </header>
