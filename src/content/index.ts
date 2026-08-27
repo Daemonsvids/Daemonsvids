@@ -34,7 +34,7 @@ export const content = {
       role: "Commercial Filmmaker & Editor",
       highlight: "Broadcast & social commercial production with top influencers",
       deliverables: "TV Promos, Viral Social Reels, Commercial Integrations",
-      year: "2022 - Present",
+      year: "2026 - Present",
       featured: true
     },
     {
