@@ -1,7 +1,8 @@
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
-import { Stack } from "./components/Stack";
+import { Clients } from "./components/Clients";
 import { Projects } from "./components/Projects";
+import { Stack } from "./components/Stack";
 import { Experience } from "./components/Experience";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
@@ -12,6 +13,7 @@ export default function App() {
       <Header />
       <main>
         <Hero />
+        <Clients />
         <Projects />
         <Stack />
         <Experience />
@@ -21,3 +23,4 @@ export default function App() {
     </div>
   );
 }
+

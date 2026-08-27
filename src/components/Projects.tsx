@@ -40,8 +40,18 @@ export function Projects() {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-1 rounded-full text-neutral-500 hover:text-white transition-colors"
-                      title="Open project"
+                      className="p-1.5 rounded-full text-neutral-400 hover:text-white bg-white/5 hover:bg-white/10 transition-colors"
+                      title="Open external link"
+                    >
+                      <ArrowUpRight className="w-5 h-5" />
+                    </a>
+                  ) : project.youtubeId ? (
+                    <a
+                      href={`https://www.youtube.com/watch?v=${project.youtubeId}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-1.5 rounded-full text-neutral-400 hover:text-white bg-white/5 hover:bg-white/10 transition-colors"
+                      title="Watch on YouTube"
                     >
                       <ArrowUpRight className="w-5 h-5" />
                     </a>

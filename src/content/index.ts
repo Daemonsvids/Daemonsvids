@@ -14,6 +14,165 @@ export const content = {
     address: "Novákových 33, Praha 8, 180 00",
     web3formsToken: "189d0a49-58a9-4c7b-a528-00dec75ff808"
   },
+  clients: [
+    {
+      id: "oktagon-mma",
+      name: "OKTAGON MMA",
+      category: "Combat Sports & Broadcast",
+      role: "Lead Video Editor, Cameraman & Director",
+      highlight: "50+ Arena spectacles across Europe, Czech Video of the Year award",
+      deliverables: "Docuseries (Cesta na OKTAGON), Fighter Promos, Live Arena Direction, Underground",
+      year: "2018 - 2025",
+      featured: true,
+      youtubeId: "7AJEWOuc8mA"
+    },
+    {
+      id: "prima-ftv",
+      name: "Prima FTV",
+      category: "Television & Broadcasting",
+      role: "Commercial Filmmaker & Editor",
+      highlight: "Broadcast & social commercial production with top influencers",
+      deliverables: "TV Promos, Viral Social Reels, Commercial Integrations",
+      year: "2022 - Present",
+      featured: true
+    },
+    {
+      id: "jirka-kral",
+      name: "Jirka Král",
+      category: "Digital Media & Agency",
+      role: "Guest Editor & Commercial Creator",
+      highlight: "High-retention digital storytelling & multi-brand commercial spots",
+      deliverables: "Brand Collaborations, Tech Showcases, Event Recaps",
+      year: "2016 - 2019",
+      featured: true
+    },
+    {
+      id: "vladavideos",
+      name: "VladaVideos",
+      category: "Entertainment & Comedy",
+      role: "Video Editor & Director",
+      highlight: "Multi-million view viral sketches, challenges and music videos",
+      deliverables: "Viral Comedy Edits, Music Video Post-Production, Social Reels",
+      year: "2015 - 2018",
+      featured: true
+    },
+    {
+      id: "trick2g",
+      name: "Trick2G",
+      category: "Top Creators & Streaming",
+      role: "High-Octane YouTube Editor",
+      highlight: "Legendary US League of Legends creator with 1M+ subscribers & global cult following",
+      deliverables: "Iconic 'My Way' Fast-Paced Edits, Subwars Highlights, Hype Sound Design",
+      year: "2015 - 2018",
+      featured: true,
+      youtubeId: "qVdjQ9y4ybk"
+    },
+    {
+      id: "kudy-bezi-zajic",
+      name: "Kudy běží zajíc",
+      category: "Podcasts & Sports Media",
+      role: "Video Editor & Podcast Production",
+      highlight: "Czechia's #1 football & sports talk podcast with massive digital audience",
+      deliverables: "Multi-Cam Video Podcast Cuts, Viral Shorts & Reels, Visual Branding & Inserts",
+      year: "2021 - Present",
+      featured: true
+    },
+    {
+      id: "housebox",
+      name: "HouseBox",
+      category: "Digital Creators & Gaming",
+      role: "Post-Production Specialist",
+      highlight: "Dynamic motion graphics & pacing optimization for viral growth",
+      deliverables: "High-Speed Edits, Narrative Pacing, Motion VFX",
+      year: "2015 - 2018",
+      featured: true
+    },
+    {
+      id: "resttpowered",
+      name: "Resttpowered",
+      category: "Top Creators & Streaming",
+      role: "Lead Stream Video Editor & Content Specialist",
+      highlight: "Slovakia's #1 Twitch & YouTube streamer with massive community reach",
+      deliverables: "Fast-Paced Stream Highlights, Viral YouTube Cuts, Comedy Pacing & Memes",
+      year: "2018 - Present",
+      featured: true,
+      youtubeId: "_pioQe5Wlzc"
+    },
+    {
+      id: "fattypillow",
+      name: "FattyPillow",
+      category: "Top Creators & Streaming",
+      role: "Lead Channel Director & Editor",
+      highlight: "Scaled channel to 500k+ subscribers and millions of monthly views",
+      deliverables: "Daily Content, Viral Skits, Long-Form Vlogs, Merch Launch Promos",
+      year: "2014 - 2018",
+      featured: true
+    },
+    {
+      id: "freezecz",
+      name: "Freeze (Freezecz)",
+      category: "Esports & Gaming",
+      role: "Esports Video Editor & Storyteller",
+      highlight: "First Czech professional League of Legends LCS/LEC player & head coach",
+      deliverables: "High-Elo Outplay Montages, Pro Gameplay Breakdowns, Narrative Vlogs",
+      year: "2016 - 2021",
+      featured: true,
+      youtubeId: "lw8WtaCBmSY"
+    },
+    {
+      id: "rooniecz",
+      name: "Rooniecz",
+      category: "Fitness & Brands",
+      role: "Commercial Filmmaker & Product Editor",
+      highlight: "High-energy fitness supplement & gym apparel brand commercials",
+      deliverables: "Cinematic Product Showcases, Gym Cinematography, High-Impact Sound Design",
+      year: "2022 - Present",
+      featured: true,
+      youtubeId: "1B76YkshDas"
+    },
+    {
+      id: "anniebot",
+      name: "Annie Bot",
+      category: "Top Creators & Streaming",
+      role: "YouTube Video Editor & Content Specialist",
+      highlight: "World-famous Challenger Annie one-trick streamer with millions of channel views",
+      deliverables: "Challenger Highlights, Outplay Compilations, Dynamic Commentary Edits",
+      year: "2016 - 2019",
+      featured: true,
+      youtubeId: "A4K_LxlG5y4"
+    },
+    {
+      id: "hopi-cup",
+      name: "Hopi Cup",
+      category: "Fitness & Tournaments",
+      role: "Lead Filmmaker & Editor",
+      highlight: "Official 4K tournament aftermovies & high-energy event recaps",
+      deliverables: "Cinematic 4K Aftermovies, Athlete Recaps, Social Teasers",
+      year: "2023 - 2024",
+      featured: true,
+      youtubeId: "rftPJ3-nlmU"
+    },
+    {
+      id: "jitka-novackova",
+      name: "Jitka Nováčková",
+      category: "Fashion & Lifestyle",
+      role: "Director of Photography & Editor",
+      highlight: "Aesthetic lifestyle vlogs, Miss Universe behind-the-scenes & fashion reels",
+      deliverables: "Fashion Films, High-End Lifestyle Vlogs, Travel Reels",
+      year: "2017 - 2020",
+      featured: false
+    },
+    {
+      id: "daemons-vids",
+      name: "Daemons Vids",
+      category: "Creative Production",
+      role: "Founder & Creative Director",
+      highlight: "Full-scale commercial & digital video production studio",
+      deliverables: "End-to-end Cinematic Production, Color Grading & Sound Design",
+      year: "2014 - Present",
+      featured: true
+    }
+  ],
   gear: {
     cameras: [
       {
@@ -134,7 +293,7 @@ export const content = {
     {
       title: "Hopi cup 2024 JS video 4K",
       role: "Video Creator",
-      description: "Produced 60-90 branded videos, vlogs, and documentary-style pieces monthly for multiple clients simultaneously.",
+      description: "Official 4K tournament aftermovie, high-speed camera coverage, and dynamic multi-angle event cinematography.",
       tags: ["REELS", "Commercial", "Social Media"],
       youtubeId: "rftPJ3-nlmU"
     }
