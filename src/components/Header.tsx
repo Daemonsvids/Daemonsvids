@@ -18,8 +18,18 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-md border-b border-white/5">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <a href="#home" className="text-xl font-bold tracking-tighter text-white">
-          JS.
+        <a href="#home" className="flex items-center gap-2.5 group">
+          <div className="w-8 h-8 rounded-full overflow-hidden border border-white/20 group-hover:border-white/50 transition-colors shrink-0 bg-neutral-800">
+            <img
+              src="/josef-portrait.jpg"
+              alt="Josef Schejbal"
+              className="w-full h-full object-cover object-top"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+          <span className="text-lg font-bold tracking-tighter text-white group-hover:text-neutral-200 transition-colors">
+            JS.
+          </span>
         </a>
 
         {/* Desktop Nav */}

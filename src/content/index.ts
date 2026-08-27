@@ -3,7 +3,8 @@ export const content = {
     name: "Josef Schejbal",
     titles: ["Video Editor", "Cameraman", "Director"],
     description: "Video editor and cameraman with over 10 years in video production. I specialize in editing, cinematography, and creating visually impactful content for brands, influencers, and international projects.",
-    personalNote: "I see inspiration and confidence as the foundation of success. Systematic, with my heart in the right place."
+    personalNote: "I see inspiration and confidence as the foundation of success. Systematic, with my heart in the right place.",
+    photo: "/josef-portrait.jpg"
   },
   contact: {
     email: "josefschejbal@daemonsvids.com",

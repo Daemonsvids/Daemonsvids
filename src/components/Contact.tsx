@@ -55,8 +55,36 @@ export function Contact() {
             viewport={{ once: true }}
             className="flex flex-col justify-center"
           >
+            {/* Personal Avatar Card */}
+            <div className="flex items-center gap-4 mb-8 p-4 rounded-2xl bg-neutral-950/80 border border-white/10 backdrop-blur-md">
+              <div className="relative w-16 h-16 rounded-xl overflow-hidden border border-white/20 shrink-0 bg-neutral-900 shadow-md">
+                <img
+                  src="/josef-portrait.jpg"
+                  alt="Josef Schejbal"
+                  className="w-full h-full object-cover object-top"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <div className="min-w-0">
+                <div className="flex items-center gap-2">
+                  <h3 className="text-white font-bold text-base">{content.hero.name}</h3>
+                  <span className="w-2 h-2 rounded-full bg-emerald-500" title="Available for bookings" />
+                </div>
+                <p className="text-xs text-neutral-400 font-mono">Lead Editor • Cameraman • Director</p>
+                <a 
+                  href="https://www.instagram.com/p/C_r2GxVMJaW/?img_index=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[11px] text-pink-400 hover:text-pink-300 transition-colors inline-flex items-center gap-1 mt-1 font-medium"
+                >
+                  <Instagram className="w-3 h-3" />
+                  <span>@daemonlive on Instagram</span>
+                </a>
+              </div>
+            </div>
+
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Let's create something extraordinary.</h2>
-            <p className="text-neutral-400 mb-12 text-lg">
+            <p className="text-neutral-400 mb-10 text-base sm:text-lg">
               {content.hero.personalNote}
             </p>
 
