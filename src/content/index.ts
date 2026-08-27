@@ -149,7 +149,7 @@ export const content = {
       highlight: "Winner of 'Video of the Year' Award for Cesta na OKTAGON",
       tags: ["Directing", "Docuseries", "Cageside Camera", "DaVinci Resolve", "Team Leadership"],
       description: [
-        "Directed, filmed, and edited flagship documentary and reality series including 'Cesta na OKTAGON', 'Na dohled', 'Backstage s Kundosaki', and 'OKTAGON Výzva'.",
+        "Directed, filmed, and edited flagship documentary and reality series including 'Cesta na OKTAGON', 'Na dohled', 'Backstage s Kundosaki', and 'OKTAGON Underground'.",
         "Lead Editor of the landmark series 'Cesta na OKTAGON: Vémola vs. Attila' — officially awarded Czech Video of the Year.",
         "Managed and coordinated on-set multi-camera crews of 12+ operators, sound engineers, and production assistants across 50+ arena spectacles.",
         "Executed high-pressure rapid turnaround turnarounds: delivered cinematic post-fight recaps, fighter walkout packages, and broadcast teasers under strict 12–24h deadlines.",
