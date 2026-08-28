@@ -284,7 +284,7 @@ export const content = {
   projects: [
     {
       title: "Cesta na OKTAGON",
-      role: "Editor & Director",
+      role: "Editor",
       description: "Award-winning documentary series covering Vémola vs. Attila. Awarded Video of the Year.",
       tags: ["Documentary", "Sports", "Directing"],
       youtubeId: "7AJEWOuc8mA"
