@@ -198,19 +198,19 @@ const ALL_REELS = [...ACTION_MMA_VIDEOS, ...DYNAMIC_SPORTS_PROMO_VIDEOS, ...OTHE
 
 const METRICS = [
   {
-    label: "Global Views",
-    value: "10B+",
-    icon: Eye,
-    desc: "Across YouTube & Digital Platforms",
-  },
-  {
-    label: "Production Experience",
-    value: "10+ Yrs",
+    label: "Editing Mastery",
+    value: "20,000+ Hrs",
     icon: Clock,
-    desc: "Editing, Cinematography & Directing",
+    desc: "7,000+ Videos on my belt",
   },
   {
-    label: "Major Recognition",
+    label: "Global Reach",
+    value: "10B+ Views",
+    icon: Eye,
+    desc: "Across YouTube & Digital Media",
+  },
+  {
+    label: "Recognition",
     value: "Video of the Year",
     icon: Award,
     desc: "Cesta na OKTAGON Series",

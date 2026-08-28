@@ -2,9 +2,15 @@ export const content = {
   hero: {
     name: "Josef Schejbal",
     titles: ["Video Editor", "Cameraman", "Director"],
-    description: "Video editor and cameraman with over 10 years in video production. I specialize in editing, cinematography, and creating visually impactful content for brands, influencers, and international projects.",
+    description: "Video editor and cameraman with over 10 years in video production, 20,000+ hours of editing, and more than 7,000 videos under my belt. I specialize in editing, cinematography, and creating visually impactful content for brands, influencers, and international projects.",
     personalNote: "I see inspiration and confidence as the foundation of success. Systematic, with my heart in the right place.",
-    photo: "/josef-portrait.jpg"
+    photo: "/josef-portrait.jpg",
+    stats: {
+      hoursEditing: "20,000+",
+      videosEdited: "7,000+",
+      views: "10B+",
+      yearsExp: "10+"
+    }
   },
   contact: {
     email: "josefschejbal@daemonsvids.com",
@@ -348,10 +354,12 @@ export const content = {
     }
   ],
   milestones: [
+    { value: "20,000+", label: "Hours of Editing", sub: "Mastery in NLE & Color" },
+    { value: "7,000+", label: "Videos Delivered", sub: "Commercials, Docs & YouTube" },
     { value: "10B+", label: "Global Video Views", sub: "Across YouTube & Socials" },
-    { value: "50+", label: "International Arena Events", sub: "CZ, DE, SK, UK" },
-    { value: "10+", label: "Years Experience", sub: "Directing & Editing" },
-    { value: "No. 1", label: "Video of the Year", sub: "Cesta na OKTAGON" }
+    { value: "No. 1", label: "Video of the Year", sub: "Cesta na OKTAGON" },
+    { value: "50+", label: "Arena Tour Events", sub: "CZ, DE, SK, UK" },
+    { value: "10+", label: "Years in Production", sub: "Directing, Camera & Post" }
   ],
   education: {
     school: "Michael - High School of Advertising Arts",

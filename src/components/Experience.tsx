@@ -14,7 +14,9 @@ import {
   Layers,
   Instagram,
   ExternalLink,
-  Camera
+  Camera,
+  Clock,
+  Video
 } from "lucide-react";
 
 export function Experience() {
@@ -107,6 +109,22 @@ export function Experience() {
                 Josef Schejbal
               </h3>
 
+              {/* Highlights Pill Badges */}
+              <div className="flex flex-wrap items-center gap-2 my-3">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-red-500/15 border border-red-500/30 text-red-300 text-xs font-semibold">
+                  <Clock className="w-3.5 h-3.5 text-red-400" />
+                  <span>20,000+ Hours of Editing</span>
+                </div>
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-neutral-200 text-xs font-semibold">
+                  <Video className="w-3.5 h-3.5 text-neutral-300" />
+                  <span>7,000+ Videos on my belt</span>
+                </div>
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-neutral-200 text-xs font-semibold">
+                  <Flame className="w-3.5 h-3.5 text-amber-400" />
+                  <span>10B+ Global Views</span>
+                </div>
+              </div>
+
               {/* Personal Philosophy Quote */}
               <div className="relative pl-4 border-l-2 border-red-500 my-2">
                 <p className="text-sm sm:text-base text-neutral-200 italic leading-relaxed">
@@ -114,8 +132,8 @@ export function Experience() {
                 </p>
               </div>
 
-              <p className="text-xs sm:text-sm text-neutral-400 mt-3 leading-relaxed">
-                With over a decade behind the camera and in the editing suite, I combine technical precision in high-speed cinematography, pacing psychology, and cinematic color management to deliver visuals that resonate with millions.
+              <p className="text-xs sm:text-sm text-neutral-300 mt-3 leading-relaxed">
+                With over <strong className="text-white font-semibold">20,000+ hours of editing</strong> and more than <strong className="text-white font-semibold">7,000 videos</strong> on my belt across a decade behind the camera and in the editing suite, I combine technical precision in high-speed cinematography, pacing psychology, and cinematic color management to deliver visuals that resonate with millions.
               </p>
 
               <div className="flex flex-wrap items-center gap-3 mt-6 pt-4 border-t border-white/10">
@@ -147,14 +165,14 @@ export function Experience() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16"
+          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 mb-16"
         >
           {content.milestones.map((m, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-neutral-950/70 border border-white/10 hover:border-white/20 transition-all text-center flex flex-col justify-center items-center group"
+              className="p-4 sm:p-5 rounded-2xl bg-neutral-950/70 border border-white/10 hover:border-white/20 transition-all text-center flex flex-col justify-center items-center group"
             >
-              <div className="text-3xl md:text-4xl font-black text-white tracking-tight group-hover:text-red-400 transition-colors">
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight group-hover:text-red-400 transition-colors">
                 {m.value}
               </div>
               <div className="text-xs font-bold text-neutral-200 mt-1">{m.label}</div>
