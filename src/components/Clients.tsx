@@ -637,11 +637,24 @@ export function Clients() {
             transition={{ duration: 0.3 }}
             className="lg:col-span-5 p-7 sm:p-8 rounded-3xl bg-neutral-900/90 border border-white/10 backdrop-blur-xl relative overflow-hidden flex flex-col justify-between min-h-[480px] shadow-2xl"
           >
-            <div className="absolute top-0 right-0 p-8 opacity-5 pointer-events-none">
+            {/* Background image if available */}
+            {activeClientData.image && (
+              <div className="absolute inset-0 z-0">
+                <img 
+                  src={activeClientData.image} 
+                  alt={activeClientData.name} 
+                  className="w-full h-full object-cover opacity-30 mix-blend-luminosity" 
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-900/80 to-neutral-900/40" />
+              </div>
+            )}
+            
+            <div className="absolute top-0 right-0 p-8 opacity-5 pointer-events-none z-0">
               <ClientLogo id={activeClientData.id} className="w-64 h-64" />
             </div>
 
-            <div>
+            <div className="relative z-10">
               <div className="flex items-center justify-between gap-4 mb-5">
                 <div className="w-16 h-16 rounded-2xl bg-black border border-white/15 p-2.5 flex items-center justify-center shadow-md">
                   <ClientLogo id={activeClientData.id} className="w-full h-full" active />

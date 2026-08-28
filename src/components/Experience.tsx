@@ -232,6 +232,19 @@ export function Experience() {
                     </div>
                   )}
 
+                  {/* Optional Project/Experience Image Showcase */}
+                  {exp.image && (
+                    <div className="mb-4 relative w-full h-48 sm:h-56 rounded-2xl overflow-hidden border border-white/10 group-hover:border-white/20 transition-all">
+                      <img 
+                        src={exp.image} 
+                        alt={`${exp.company} - ${exp.title}`} 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                        referrerPolicy="no-referrer"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+                    </div>
+                  )}
+
                   {/* Bullet Points */}
                   <ul className="space-y-2.5 mb-5">
                     {exp.description.map((desc, i) => (

@@ -31,7 +31,8 @@ export const content = {
       deliverables: "Docuseries (Cesta na OKTAGON), Fighter Promos, Live Arena Direction, Underground",
       year: "2018 - 2025",
       featured: true,
-      youtubeId: "7AJEWOuc8mA"
+      youtubeId: "7AJEWOuc8mA",
+      image: "/oktagon-bts.jpg"
     },
     {
       id: "prima-ftv",
@@ -320,7 +321,8 @@ export const content = {
         "Managed and coordinated on-set multi-camera crews of 12+ operators, sound engineers, and production assistants across 50+ arena spectacles.",
         "Executed high-pressure rapid turnaround turnarounds: delivered cinematic post-fight recaps, fighter walkout packages, and broadcast teasers under strict 12–24h deadlines.",
         "Traveled on international tours filming across the biggest European stadiums and arenas (Prague O2 Arena, Frankfurt Festhalle, Birmingham, Cologne, Bratislava)."
-      ]
+      ],
+      image: "/oktagon-bts.jpg"
     },
     {
       title: "Commercial Filmmaker & Creative Director",
