@@ -68,7 +68,7 @@ export function Contact() {
               <div className="min-w-0">
                 <div className="flex items-center gap-2">
                   <h3 className="text-white font-bold text-base">{content.hero.name}</h3>
-                  <span className="w-2 h-2 rounded-full bg-emerald-500" title="Available for bookings" />
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" title="Available for bookings" />
                 </div>
                 <p className="text-xs text-neutral-400 font-mono">Lead Editor • Cameraman • Director</p>
                 <a 
