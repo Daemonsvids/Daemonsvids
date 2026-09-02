@@ -11,7 +11,8 @@ import {
   Zap,
   ExternalLink, 
   Youtube, 
-  Layers 
+  Layers,
+  ShoppingBag 
 } from "lucide-react";
 import { useState } from "react";
 
@@ -291,12 +292,20 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-              className="flex flex-wrap gap-4 w-full sm:w-auto justify-center lg:justify-start mb-10"
+              className="flex flex-wrap gap-3 sm:gap-4 w-full sm:w-auto justify-center lg:justify-start mb-10"
             >
+              <a
+                href="#fashion-merch"
+                id="hero-fashion-merch-btn"
+                className="px-6 py-3.5 rounded-full bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white font-semibold transition-all shadow-lg shadow-red-600/20 text-center flex items-center justify-center gap-2 text-sm"
+              >
+                <ShoppingBag className="w-4 h-4" />
+                Fashion & Merch Reel
+              </a>
               <a
                 href="#projects"
                 id="hero-view-projects-btn"
-                className="px-7 py-3.5 rounded-full bg-white text-black font-semibold hover:bg-neutral-200 transition-all shadow-lg hover:shadow-white/10 text-center flex items-center justify-center gap-2 text-sm"
+                className="px-6 py-3.5 rounded-full bg-white text-black font-semibold hover:bg-neutral-200 transition-all shadow-lg hover:shadow-white/10 text-center flex items-center justify-center gap-2 text-sm"
               >
                 <Film className="w-4 h-4" />
                 Explore Projects
@@ -304,7 +313,7 @@ export function Hero() {
               <a
                 href="#contact"
                 id="hero-contact-btn"
-                className="px-7 py-3.5 rounded-full bg-white/5 text-white font-semibold border border-white/15 hover:bg-white/10 transition-all text-center text-sm backdrop-blur-sm"
+                className="px-6 py-3.5 rounded-full bg-white/5 text-white font-semibold border border-white/15 hover:bg-white/10 transition-all text-center text-sm backdrop-blur-sm"
               >
                 Get in Touch
               </a>

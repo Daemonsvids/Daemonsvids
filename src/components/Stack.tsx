@@ -54,8 +54,8 @@ export function Stack() {
           <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight mb-4">
             The Gear & <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-300 to-neutral-500">Tech Arsenal</span>
           </h2>
-          <p className="text-neutral-400 max-w-2xl mx-auto text-base">
-            Engineered for high-intensity live sports, rapid turnaround octagon documentaries, and broadcast-grade cinematic commercial grading.
+          <p className="text-neutral-400 max-w-2xl mx-auto text-base leading-relaxed">
+            I shoot and edit with professional cinema cameras and broadcast-grade color grading — the same tools and techniques used on national TV and major sports broadcasts — so your footage looks polished no matter where it's watched.
           </p>
 
           {/* Key Production Standard Pills */}

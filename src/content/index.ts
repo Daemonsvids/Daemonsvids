@@ -51,7 +51,7 @@ export const content = {
       role: "Guest Editor & Commercial Creator",
       highlight: "High-retention digital storytelling & multi-brand commercial spots",
       deliverables: "Brand Collaborations, Tech Showcases, Event Recaps",
-      year: "2016 - 2019",
+      year: "2016 - 2018",
       featured: true
     },
     {
@@ -185,19 +185,19 @@ export const content = {
     cameras: [
       {
         name: "Sony FX3 (Cinema Line)",
-        specs: "Full-Frame 4K 120p, 10-Bit 4:2:2, 15+ stops dynamic range, S-Cinetone & S-Log3, Dual Base ISO 800/12800",
+        specs: "Primary cinema camera capturing crisp 4K slow-motion with exceptional low-light clarity.",
         badge: "Primary A-Cam",
         tag: "Cinema"
       },
       {
         name: "Panasonic Lumix GH5",
-        specs: "4K 60p 10-Bit internal, Dual I.S. 2, V-Log L, extreme durability for multi-cam & doc work",
+        specs: "High-speed secondary camera built for fast-paced action, sports, and multi-cam setups.",
         badge: "B-Cam / High-Speed",
         tag: "Action"
       },
       {
         name: "Panasonic Lumix FZ2000",
-        specs: "24-480mm LEICA optical zoom, built-in optical 4-stop ND filters, run-and-gun arena coverage",
+        specs: "Telephoto zoom camera for capturing live events and distant arena action seamlessly.",
         badge: "Telephoto Event Cam",
         tag: "Live Events"
       }
@@ -205,7 +205,7 @@ export const content = {
     aerial: [
       {
         name: "DJI Mavic 2 Pro",
-        specs: "Hasselblad 1-inch CMOS sensor, 10-Bit Dlog-M 4K HDR, omnidirectional obstacle sensing, cinematic aerial tracking",
+        specs: "Professional drone for sweeping 4K aerial shots and dynamic cinematic tracking.",
         badge: "Drone / Aerials",
         tag: "4K Aerial"
       }
@@ -213,33 +213,33 @@ export const content = {
     optics: [
       {
         name: "Sony G Master & High-Speed Primes",
-        specs: "Fast f/1.4 - f/2.8 apertures for ultra-low light MMA arenas, creamy bokeh, and razor-sharp subject isolation",
+        specs: "Fast prime lenses for beautiful background blur and razor-sharp clarity in any lighting.",
         badge: "Cinema Glass",
         tag: "Optics"
       },
       {
         name: "Cinema Variable ND & Polarizer Filters",
-        specs: "True-color neutral density filters (1-8 stops) allowing 180° shutter rule in bright sunlight and harsh spotlights",
+        specs: "Light control filters ensuring smooth, natural motion blur in bright daylight and stage lights.",
         badge: "Light Control",
         tag: "Glass"
       }
     ],
     postProduction: [
       {
-        name: "DaVinci Resolve Studio (Color & Edit)",
-        specs: "Hardware-accelerated color grading, ACEScc color science, advanced noise reduction, Fairlight audio mastering",
+        name: "DaVinci Resolve Studio",
+        specs: "Industry-standard color grading and editing suite for broadcast-ready visuals and rich film tones.",
         badge: "Grading & Master NLE",
         tag: "Software"
       },
       {
         name: "Adobe After Effects & Motion Suite",
-        specs: "High-end motion graphics, 3D camera tracking, dynamic VFX transitions, title animations, and speed ramping",
+        specs: "Dynamic motion graphics, animated titles, and seamless visual transitions.",
         badge: "VFX & Motion",
         tag: "Software"
       },
       {
         name: "Dedicated Color-Calibrated Workstation",
-        specs: "Multi-GPU rendering rig, 10-bit Rec.709 & DCI-P3 calibrated monitoring, NVMe RAID editing storage (>5000MB/s)",
+        specs: "High-speed editing rig with color-calibrated monitors so your video looks consistent on every screen.",
         badge: "Hardware Suite",
         tag: "Hardware"
       }
@@ -369,6 +369,131 @@ export const content = {
     period: "Graduated",
     focus: "Visual Communications, Creative Strategy & Brand Media"
   },
+  fashionMerchReels: [
+    {
+      id: "C4yRf7XsODN",
+      url: "https://www.instagram.com/oktagonmma/reel/C4yRf7XsODN/",
+      account: "@oktagonmma",
+      title: "Arena Merch & Fightwear Promo",
+      subtitle: "High-voltage stadium merchandise commercial with high-speed cuts",
+      category: "Merch Drop",
+      isBest: true,
+      rank: 1,
+      tag: "Best Pick #1"
+    },
+    {
+      id: "C8UoH4VscHa",
+      url: "https://www.instagram.com/oktagonmma/reel/C8UoH4VscHa/",
+      account: "@oktagonmma",
+      title: "Signature Fight Club Apparel",
+      subtitle: "Bold cinematic visuals spotlighting official fighter edition apparel",
+      category: "Fightwear",
+      isBest: true,
+      rank: 2,
+      tag: "Best Pick #2"
+    },
+    {
+      id: "C9DMUIKsnKb",
+      url: "https://www.instagram.com/oktagonmma_store/reel/C9DMUIKsnKb/",
+      account: "@oktagonmma_store",
+      title: "Urban Fighter Streetwear Cut",
+      subtitle: "Gritty street-style lifestyle cut with rich shadow contrast",
+      category: "Streetwear",
+      isBest: true,
+      rank: 3,
+      tag: "Best Pick #3"
+    },
+    {
+      id: "C9kKEIiseoA",
+      url: "https://www.instagram.com/oktagonmma_store/reel/C9kKEIiseoA/",
+      account: "@oktagonmma_store",
+      title: "Summer Store Collection Launch",
+      subtitle: "Sun-drenched aesthetic lookbook and e-commerce hero reel",
+      category: "Lookbook",
+      isBest: false
+    },
+    {
+      id: "C9P53EaMpBg",
+      url: "https://www.instagram.com/oktagonmma/reel/C9P53EaMpBg/",
+      account: "@oktagonmma",
+      title: "Performance Athletic Wear",
+      subtitle: "Heavyweight athletic collection showcase engineered for fighters",
+      category: "Athletic Wear",
+      isBest: false
+    },
+    {
+      id: "C9KvOHVMiyu",
+      url: "https://www.instagram.com/oktagonmma_store/reel/C9KvOHVMiyu/",
+      account: "@oktagonmma_store",
+      title: "Headwear & Caps Drop",
+      subtitle: "Product-focused macro shots, textures, and energetic music sync",
+      category: "Accessories",
+      isBest: false
+    },
+    {
+      id: "C40zFOJsit8",
+      url: "https://www.instagram.com/oktagonmma/reel/C40zFOJsit8/",
+      account: "@oktagonmma",
+      title: "OKTAGON Streetwear Drop",
+      subtitle: "Kinetic apparel launch with dynamic rhythm and urban grading",
+      category: "Streetwear",
+      isBest: false
+    },
+    {
+      id: "C8R5OHYsnVx",
+      url: "https://www.instagram.com/oktagonmma_store/reel/C8R5OHYsnVx/",
+      account: "@oktagonmma_store",
+      title: "Official Store Seasonal Promo",
+      subtitle: "Pacing and sound design built to drive instant online store conversions",
+      category: "E-Commerce",
+      isBest: false
+    },
+    {
+      id: "C8KDqV9sNK-",
+      url: "https://www.instagram.com/oktagonmma_store/reel/C8KDqV9sNK-/",
+      account: "@oktagonmma_store",
+      title: "Heavyweight Hoodies & Outerwear",
+      subtitle: "Detailed fabric texture cinematography and modern color grade",
+      category: "Apparel",
+      isBest: false
+    },
+    {
+      id: "C6385MwIg91",
+      url: "https://www.instagram.com/oktagonmma_store/reel/C6385MwIg91/",
+      account: "@oktagonmma_store",
+      title: "Store Summer Campaign",
+      subtitle: "Vibrant lifestyle campaign featuring brand ambassadors and models",
+      category: "Lookbook",
+      isBest: false
+    },
+    {
+      id: "C5a40assqfx",
+      url: "https://www.instagram.com/oktagonmma/reel/C5a40assqfx/",
+      account: "@oktagonmma",
+      title: "Fighter Edition Collection",
+      subtitle: "Exclusive tournament collection reveal with dramatic arena lighting",
+      category: "Fightwear",
+      isBest: false
+    },
+    {
+      id: "C5Q21FrM7Nj",
+      url: "https://www.instagram.com/oktagonmma_store/reel/C5Q21FrM7Nj/",
+      account: "@oktagonmma_store",
+      title: "Limited Edition Arena Drops",
+      subtitle: "Rapid-fire commercial spot announcing high-demand merch drops",
+      category: "Limited Drop",
+      isBest: false
+    },
+    {
+      id: "C5D0c_tMD2V",
+      url: "https://www.instagram.com/oktagonmma/reel/C5D0c_tMD2V/",
+      account: "@oktagonmma",
+      title: "Store Commercial Spotlight",
+      subtitle: "Punchy visual FX, speed ramps, and seamless product transitions",
+      category: "Commercial",
+      isBest: false
+    }
+  ],
   languages: [
     { name: "Czech", level: "Native", code: "CZ" },
     { name: "English", level: "Fluent (C2)", code: "EN" },
